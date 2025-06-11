@@ -1,4 +1,13 @@
 {
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
+    "cmake.generator": "Ninja",
     "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true
+    "files.trimFinalNewlines": true,
+    "files.associations": {
+        "ashtech.h": "c",
+        "ashtech_api_registry.h": "c",
+        "ashtech_thing.h": "c",
+        "ashtech_window.h": "c",
+        "string.h": "c"
+    }
 }
