@@ -19,6 +19,37 @@ NamespaceIndentation: All
 AllowShortCaseLabelsOnASingleLine: true
 
 IncludeBlocks: Regroup
+IncludeCategories:
+  # Plugin headers included using angled brackets
+  - Regex: '^<at/ashtech\.h>$'
+    Priority: 4
+    SortPriority: 0
+  - Regex: '^<at(_[^/]+)?/.*>'
+    Priority: 4
+    SortPriority: 10
+  # C standard headers
+  - Regex: '^(<|")((stdio|string|stdarg|stdbool|stdint)\.h)'
+    Priority: 1
+    SortPriority: 0
+  # Platform-specific headers
+  - Regex: '^<Windows\.h>'
+    Priority: 2
+    SortPriority: 0
+  # Third-party headers
+  - Regex: '^<[^/]+/[^>]+>'
+    Priority: 3
+    SortPriority: 0
+  # Project headers included with quotes
+  - Regex: '^"at/ashtech\.h"$'
+    Priority: 5
+    SortPriority: 0
+  - Regex: '^"at(_[^/]+)?/.*"'
+    Priority: 5
+    SortPriority: 10
+  # Catch-all fallback
+  - Regex: '.*'
+    Priority: 6
+    SortPriority: 0
 SortIncludes: true
 SortIncludesOptions:
   Enabled: true

@@ -1,12 +1,13 @@
+#include <stdio.h>
+
 #define WIN32_LEAN_AND_MEAN
 #define NOMINMAX
-#include "Windows.h"
+#include <Windows.h>
 
-#include <at/api_registry.h>
 #include <at/ashtech.h>
+#include <at/api_registry.h>
 #include <at/thing.h>
 #include <at_window/window.h>
-#include <stdio.h>
 
 int main(void)
 {

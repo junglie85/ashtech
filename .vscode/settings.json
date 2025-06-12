@@ -8,6 +8,8 @@
         "ashtech_api_registry.h": "c",
         "ashtech_thing.h": "c",
         "ashtech_window.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "thing.h": "c",
+        "api_registry.h": "c"
     }
 }

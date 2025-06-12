@@ -1,9 +1,9 @@
 #include "at_window/window.h"
 
-#include <at/api_registry.h>
-#include <at/ashtech.h>
-#include <stdbool.h>
 #include <stdio.h>
+
+#include <at/ashtech.h>
+#include <at/api_registry.h>
 
 at_window_api g_window_api;
 bool g_initialised = false;

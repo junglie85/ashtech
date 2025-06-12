@@ -1,7 +1,8 @@
-#include "ashtech_registry.h"
-
-#include <ashtech.h>
 #include <string.h>
+
+#include <at/ashtech.h>
+
+#include "at/api_registry.h"
 
 typedef struct api_registry_entry_t
 {
