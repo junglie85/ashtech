@@ -19,6 +19,6 @@ target_compile_options(ashtech_example_sandbox PUBLIC /FC /Zi /W4 /WX /external:
 
 target_link_libraries(ashtech_example_sandbox
     PRIVATE
-    ashtech
-    $<COMPILE_ONLY:ashtech_window>
+    at_core
+    $<COMPILE_ONLY:at_window>
 )

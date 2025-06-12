@@ -5,25 +5,25 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
 set(HEADERS
-    "include/ashtech_window.h"
+    "include/at_window/window.h"
 )
 
-add_library(ashtech_window
+add_library(at_window
     SHARED
-    "src/ashtech_window.c"
+    "src/window.c"
     "${HEADERS}"
 )
 
-target_include_directories(ashtech_window
+target_include_directories(at_window
     PUBLIC
     "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
     "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>"
 )
 
-target_compile_features(ashtech_window PRIVATE c_std_11)
-target_compile_options(ashtech_window PUBLIC /FC /Zi /W4 /WX /external:anglebrackets /external:W0)
+target_compile_features(at_window PRIVATE c_std_11)
+target_compile_options(at_window PUBLIC /FC /Zi /W4 /WX /external:anglebrackets /external:W0)
 
-target_link_libraries(ashtech_window
+target_link_libraries(at_window
     PRIVATE
-    ashtech
+    at_core
 )

@@ -1,6 +1,5 @@
-#include "ashtech_api_registry.h"
-
-#include "ashtech.h"
+#include "at/api_registry.h"
+#include "at/ashtech.h"
 
 #include <string.h>
 

@@ -2,17 +2,17 @@
 #define NOMINMAX
 #include "Windows.h"
 
-#include <ashtech.h>
-#include <ashtech_api_registry.h>
-#include <ashtech_thing.h>
-#include <ashtech_window.h>
+#include <at/api_registry.h>
+#include <at/ashtech.h>
+#include <at/thing.h>
+#include <at_window/window.h>
 #include <stdio.h>
 
 int main(void)
 {
     at_init_global_api_registry();
 
-    HMODULE ashtech_window = LoadLibraryA("ashtech_window.dll");
+    HMODULE ashtech_window = LoadLibraryA("at_window.dll");
     if (ashtech_window == NULL) {
         printf("failed to load library");
         return -1;

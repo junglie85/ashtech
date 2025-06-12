@@ -1,7 +1,7 @@
-#include "ashtech_window.h"
+#include "at_window/window.h"
 
-#include <ashtech.h>
-#include <ashtech_api_registry.h>
+#include <at/api_registry.h>
+#include <at/ashtech.h>
 #include <stdbool.h>
 #include <stdio.h>
 
