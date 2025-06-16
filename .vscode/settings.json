@@ -3,5 +3,7 @@
     "cmake.generator": "Ninja",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
-    "files.associations": {}
+    "files.associations": {
+        "iostream": "cpp"
+    }
 }

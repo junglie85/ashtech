@@ -1,0 +1,19 @@
+set(SDL3_VERSION "release-3.2.16")
+set(SDL3_ARCHIVE "${VENDOR_PREFIX}/SDL-${SDL3_VERSION}.zip")
+
+ExternalProject_Add(
+    SDL3
+    URL             "${SDL3_ARCHIVE}"
+    URL_HASH        SHA256=d72f4e91e4b5ff20da5794478d797a62d5c9f87749ee9d5f0419d2dab8476dee
+    UPDATE_COMMAND   ""                       # nothing to update
+    CMAKE_ARGS
+        -DCMAKE_BUILD_TYPE=${BUILD_CONFIG}
+        -DCMAKE_INSTALL_PREFIX=${VENDOR_INSTALL_PREFIX}
+        -DCMAKE_POSITION_INDEPENDENT_CODE=ON
+        -DSDL_SHARED_DEFAULT=OFF
+        -DSDL_STATIC=ON
+        -DSDL_SHARED=OFF
+        -DSDL_TEST_LIBRARY=OFF
+        -DSDL_EXAMPLES=OFF
+        -DSDL_INSTALL=ON
+)

@@ -13,7 +13,24 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "Build sandbox"
+            "detail": "Build sandbox",
+            "dependsOn": [
+                "build_vendor"
+            ]
+        },
+        {
+            "label": "build_vendor",
+            "type": "shell",
+            "command": "${workspaceFolder}/scripts/build_vendor.bat",
+            "options": {},
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "detail": "Build vendor"
         }
     ]
 }
