@@ -3,13 +3,5 @@
     "cmake.generator": "Ninja",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
-    "files.associations": {
-        "ashtech.h": "c",
-        "ashtech_api_registry.h": "c",
-        "ashtech_thing.h": "c",
-        "ashtech_window.h": "c",
-        "string.h": "c",
-        "thing.h": "c",
-        "api_registry.h": "c"
-    }
+    "files.associations": {}
 }

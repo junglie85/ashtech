@@ -15,8 +15,9 @@ BraceWrapping:
   BeforeCatch:     false
   BeforeElse:      false
   IndentBraces:    false
-NamespaceIndentation: All
+NamespaceIndentation: None
 AllowShortCaseLabelsOnASingleLine: true
+FixNamespaceComments: true
 
 IncludeBlocks: Regroup
 IncludeCategories:
@@ -28,7 +29,7 @@ IncludeCategories:
     Priority: 4
     SortPriority: 10
   # C standard headers
-  - Regex: '^(<|")((stdio|string|stdarg|stdbool|stdint)\.h)'
+  - Regex: '^(<|")((stdio|string|stdarg|stdbool|stdint|stdlib)\.h)'
     Priority: 1
     SortPriority: 0
   # Platform-specific headers

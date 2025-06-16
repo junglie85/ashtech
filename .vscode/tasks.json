@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build_ashtech",
+            "label": "build_sandbox",
             "type": "cmake",
             "command": "build",
             "options": {},
@@ -13,7 +13,7 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "Build ashtech"
+            "detail": "Build sandbox"
         }
     ]
 }

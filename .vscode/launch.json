@@ -2,15 +2,15 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "ashtech",
+            "name": "sandbox",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/bin/ashtech.exe",
+            "program": "${workspaceFolder}/build/bin/sandbox.exe",
             "args": [],
             "cwd": "${workspaceFolder}",
             "environment": [],
             "console": "externalTerminal",
-            "preLaunchTask": "build_ashtech"
+            "preLaunchTask": "build_sandbox"
         }
     ]
 }
