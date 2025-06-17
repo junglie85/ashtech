@@ -13,10 +13,7 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "Build sandbox",
-            "dependsOn": [
-                "build_vendor"
-            ]
+            "detail": "Build sandbox"
         },
         {
             "label": "build_vendor",
@@ -28,7 +25,7 @@
             ],
             "group": {
                 "kind": "build",
-                "isDefault": false
+                "isDefault": true
             },
             "detail": "Build vendor"
         }

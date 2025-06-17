@@ -5,8 +5,8 @@ $generator = "Ninja"
 $c_compiler = "cl"
 $cxx_compiler = "cl"
 $source_path = "$PSScriptRoot\..\vendor"
-$build_path = "$PSScriptRoot\..\build\vendor"
-$install_path = "$PSScriptRoot\..\vendor\installed"
+$build_path = "$PSScriptRoot\..\build\vendor\build"
+$install_path = "$PSScriptRoot\..\build\vendor\install"
 
 cmake -DCMAKE_BUILD_TYPE="${build_type}" `
     -DCMAKE_INSTALL_PREFIX="${install_path}" `

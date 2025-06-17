@@ -2,10 +2,10 @@ cmake_minimum_required(VERSION 3.30)
 project(ashtech_vendor VERSION 0.0.1 LANGUAGES C CXX)
 
 include(ExternalProject)
-include(CMakePrintHelpers)        # for troubleshooting (optional)
+# include(CMakePrintHelpers) # for troubleshooting (optional)
 
 set(VENDOR_PREFIX "${CMAKE_SOURCE_DIR}")
-set(VENDOR_INSTALL_PREFIX "${VENDOR_PREFIX}/installed")
+set(VENDOR_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 file(MAKE_DIRECTORY "${VENDOR_INSTALL_PREFIX}")        # ensure it exists
 
 # Use CMAKE_BUILD_TYPE or $<CONFIG> depending on generator. Needed so we can propagate in ExternalProject_Add.
